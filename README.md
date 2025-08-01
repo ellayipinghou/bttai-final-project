@@ -19,12 +19,12 @@ By inferring income from available demographic and behavioral data, businesses c
 implications of such predictions, particularly in contexts like lending or insurance, to ensure responsible and fair use of AI.
 
 🧠 **Key Concepts Demonstrated:**
-- Supervised Learning: binary classification
-- Data Preprocessing: handling missing values, winsorization, one-hot encoding, train-test split
-- Data exploration and visualization
+- Supervised Learning & Binary Classification
+- Data Preprocessing: Handling missing values, winsorization, one-hot encoding, train-test split
+- Data exploration and Visualization
 - Building Tree-Based Models: simple decision trees, random forests, gradient-boosted decision trees
-- Feature Selection & Model Selection: hyperparameter tuning using grid search with cross-validation
-- Model Evaluation: accuracy, auc, precision, recall, f1 score, confusion matrix
+- Feature Selection & Model Selection: Hyperparameter tuning using grid search with cross-validation
+- Model Evaluation: Accuracy, AUC, precision, recall, F1 score, confusion matrix
 
 📊 **Chosen Features:** age, education, occupation, marital-status, relationship, race, sex, hours-per-week, and native-country
 
