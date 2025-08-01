@@ -1,4 +1,4 @@
-# Income Classification – Final Project for ML Foundations 💼
+# Income Classification – ML Foundations Final Project 💼
 
 This repository contains my final project for the Machine Learning Foundations course offered by eCornell, as part of the Break Through Tech AI Program at MIT. 
 The goal of the project is to develop a supervised machine learning model that predicts whether a person earns more than $50K per year based on demographic and work-related features.
