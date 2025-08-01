@@ -22,8 +22,8 @@ implications of such predictions, particularly in contexts like lending or insur
 - Supervised Learning & Binary Classification
 - Data Preprocessing: Handling missing values, winsorization, one-hot encoding, train-test split
 - Data exploration and Visualization
-- Building Tree-Based Models: simple decision trees, random forests, gradient-boosted decision trees
-- Feature Selection & Model Selection: Hyperparameter tuning using grid search with cross-validation
+- Building Tree-Based Models: Simple decision trees, random forests, gradient-boosted decision trees
+- Feature Selection & Model Selection: Hyperparameter tuning, grid search with cross-validation, threshold tuning
 - Model Evaluation: Accuracy, AUC, precision, recall, F1 score, confusion matrix
 
 📊 **Chosen Features:** age, education, occupation, marital-status, relationship, race, sex, hours-per-week, and native-country
@@ -39,10 +39,11 @@ implications of such predictions, particularly in contexts like lending or insur
 
 ⚠️ **Note on Class Imbalance**: 
 
-The dataset is imbalanced, with 76% of individuals earning <=50K. Despite using techniques like class_weight='balanced' and resampling, model performance remains uneven across 
-classes:
+The dataset is imbalanced, with 76% of individuals earning <=50K. Despite using techniques like class_weight='balanced' and resampling, model performance remains uneven across classes:
 - Accuracy for >50K (minority) class: 70.8%
 - Accuracy for ≤50K (majority) class: 87.9%
+
+Further tuning the classification threshold to maximize the F1 score does achieve a more balanced accuracy between the two classes, but at the expense of lower overall accuracy.
   
 🧑🏽‍⚖️ **Note on Fairness Across Demographics**:
 
