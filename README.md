@@ -18,6 +18,12 @@ Predicting income can support a variety of real-world business applications, suc
 By inferring income from available demographic and behavioral data, businesses can better understand their users and improve strategic decision-making. However, it’s also important to consider the ethical 
 implications of such predictions, particularly in contexts like lending or insurance, to ensure responsible and fair use of AI.
 
+🚀 **Model Selection:**
+
+I chose to use tree-based models because they can handle both numerical and categorical features without extensive preprocessing, work well for binary classification tasks, and are more interpretable than models like Neural Networks. While KNN and logistic regression can also be applied to binary classification, they require feature scaling and can struggle to capture complex nonlinear relationships as well as tree-based models.
+
+I started by training a simple Decision Tree model and then extended to ensemble methods like Random Forests and Gradient-Boosted Decision Trees. For each of these three model types, I conducted a grid search with 5-fold cross-validation to find the hyperparameters that result in the best validation performance. After the grid search, I compared the validation accuracies of the best-performing configurations of each model (DT, RF, GBDT) to make my final selection and fit the final model. The result was a Random Forest Classifier with max depth = 50, n estimators = 300, minimum samples per leaf = 1, and criterion = entropy.
+
 🧠 **Key Concepts Demonstrated:**
 - Supervised Learning & Binary Classification
 - Data Preprocessing: Handling missing values, winsorization, one-hot encoding, train-test split
